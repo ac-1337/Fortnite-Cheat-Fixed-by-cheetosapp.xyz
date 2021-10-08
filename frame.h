@@ -440,17 +440,17 @@ void gui()
 
 		p = ImGui::GetWindowPos();
 
-		Render::ShadowText(p.x + 8, p.y + 5, ImColor(255, 187, 0, 200), "Cheetos Remake CL l FREE VERSION");
+		Render::ShadowText(p.x + 8, p.y + 5, ImColor(255, 187, 0, 200), "Cheetos Remake CL l V3.5 VERSION");
 
 		Render::Rect(p.x, p.y, 520, 580, ImColor(0, 67, 91, 255), 2);
 		Render::RectFilled(p.x + 10, p.y + 70, 500, 500, ImColor(0, 67, 91));
 
-		PS::CL_Tab("Visuals", 1, 10, 30);
-		PS::CL_Tab("Aimbot", 2, 140, 30);
+		PS::CL_Tab("Aimbot", 1, 10, 30);
+		PS::CL_Tab("Visuals", 2, 140, 30);
 	    //PS::CL_Tab("Mods", 3, 388, 30);
 		PS::CL_Tab("Exploits", 4, 260, 30);
 
-		if (tabs == 1) // VISUALS
+		if (tabs == 2) // VISUALS
 		{
 			PS::CL_ToggleButton("Characters ESP", &settings::corner, 25, 80, 400);
 			PS::CL_ToggleButton("Skeleton ESP", &settings::bones, 25, 110, 400);
@@ -465,15 +465,15 @@ void gui()
 			//PS::CL_ToggleButton("Lines ESP", &settings::Lines, 25, 80, 400);
 			//PS::CL_ToggleButton("Vehicles ESP", &settings::Vehicles, 25, 80, 400);
 			//PS::CL_ToggleButton("Skeleton ESP", &settings::bones, 25, 110, 400);
-			////PS::CL_ToggleButton("Skeleton Only Behind Walls", &settings::vischeck, 25, 140, 400);
+			//PS::CL_ToggleButton("Skeleton Only Behind Walls", &settings::vischeck, 25, 140, 400);
 			//PS::CL_ToggleButton("Loot ESP", &settings::chest, 25, 170, 400);
 		}
 
 
-		if (tabs == 2) // AIMBOT
+		if (tabs == 1) // AIMBOT
 		{
 			PS::CL_ToggleButton("Aimbot", &settings::aimbot, 25, 80, 400);
-			PS::CL_ToggleButton("Silent Mode", &settings::silentaim, 25, 110, 400);
+			PS::CL_ToggleButton("Porn Silent [Help you think fast]", &settings::silentaim, 25, 110, 400);
 			PS::CL_ToggleButton("FOV CIRCLE", &settings::aimbotfov, 25, 140, 400);
 			PS::CL_Slider("FOV Slider", &settings::radius, 38, 200, 90, 150, " Aimbot Fov");
 			PS::CL_Slider("FOV Slider", &settings::smoothing, 38, 230, 90, 150, "Aimbot Smooth");
@@ -503,10 +503,9 @@ if (tabs == 4) // MISC
 	PS::CL_ToggleButton("Rapid Fire", &settings::Rapid_Fire, 25, 80, 400);
 	PS::CL_ToggleButton("No Bloom", &settings::No_Bloom, 25, 110, 400);
 	PS::CL_ToggleButton("Instant Revive", &settings::InstaRevive, 25, 140, 400);
-	PS::CL_ToggleButton("Aim while jumping", &settings::AimAir, 25, 200, 400);
+	PS::CL_ToggleButton("Aim in air", &settings::AimAir, 25, 170, 400);
+	PS::CL_ToggleButton("Insta Reload", &settings::InstaReload, 25, 200, 400);
 	PS::CL_ToggleButton("Animations disable", &settings::NoAnimation, 25, 230, 400);
-	PS::CL_ToggleButton("Instant Reload", &settings::InstaReload, 25, 260, 400);
-
 
 
 

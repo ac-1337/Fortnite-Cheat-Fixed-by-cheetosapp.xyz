@@ -10,7 +10,7 @@ namespace settings
 	bool bones = true;
 	bool Box3D = false;
 	bool aimbot = true;
-	float smoothing = 1;
+	float smoothing = 4;
 	bool Rapid_Fire = false;
 	bool No_Bloom = false;
 	bool InstaRevive = false;
@@ -19,7 +19,7 @@ namespace settings
 	bool menu = true;
 	bool aimbotfov = true;
 	bool BotEsp = true;
-	float radius = 240;
+	float radius = 32;
 	bool chest = true;
 	bool NoAnimation = false;
 	bool InstaReload = false;
